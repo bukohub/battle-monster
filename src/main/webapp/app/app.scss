@@ -1,0 +1,76 @@
+// Override Boostrap variables
+// Import Bootstrap source files from node_modules
+@import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Sigmar&display=swap');
+
+html {
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 233, 145, 0.6), rgba(255, 233, 145, 0.8));
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 233, 145, 0.6), rgba(255, 233, 145, 0.8));
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Konkhmer Sleokchher', cursive;
+
+  &:after,
+  &::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.container-battle {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tags {
+  ul {
+    display: flex;
+    padding: 0;
+  }
+
+  li {
+    margin-right: 10px;
+    list-style: none;
+    font-size: 13px;
+    color: gray;
+  }
+}
+
+.app-container {
+  box-sizing: border-box;
+
+  .view-container {
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+
+    .card {
+      padding: 1rem;
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 2px;
+    }
+
+    .view-routes {
+      height: 100%;
+
+      >div {
+        height: 100%;
+      }
+    }
+  }
+}
